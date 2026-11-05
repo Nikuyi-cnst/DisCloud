@@ -1,0 +1,10 @@
+node_modules/
+**/node_modules/
+.expo/
+**/.expo/
+dist/
+**/dist/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo

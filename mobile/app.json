@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "DisCloud",
+    "slug": "discloud",
+    "version": "1.0.0",
+    "scheme": "discloud",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.nikuyicnst.discloud",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "DisCloud connects to the PC relay on your local Wi-Fi to update Discord Rich Presence.",
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.nikuyicnst.discloud",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "./plugins/withLocalNetwork"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
